@@ -1,51 +1,148 @@
-# BakeVerse — public demo preview
+# 🧁 BakeVerse — AI-Powered Bakery Web Application
 
-This is a **frontend-only demonstration build** of BakeVerse. It uses an illustrative sample catalogue stored in `src/data/demoProducts.js`; it does not connect to the original database or backend.
+**BakeVerse** is a bakery web application concept that combines a modern shopping experience with AI-powered features for cake discovery, personalization, and bakery management.
 
-## What's enabled
+The project explores how web development, database integration, and artificial intelligence can work together to create a more interactive and personalized online bakery experience.
 
-- Home page and sample bakery showcase
-- Sample product catalogue
-- Product search, category/bakery filters, dietary filters and sorting
-- Product detail preview and light/dark theme toggle
+> **Live Demo:** [https://bakeverse-orcin.vercel.app](https://bakeverse-orcin.vercel.app)  
+> **Project Status:** Public frontend demo available | Full project available on request
 
-## What's intentionally disabled
+---
 
-User accounts, login, ordering, cart/checkout, reviews, live inventory, AI services, custom cake tools, admin tools and bakery dashboards. Those features need the original backend and database and should not be presented as live functionality in this demo.
+## 🌐 Explore the Demo
 
-## Deploy it under your own accounts
+Visit the deployed website to explore the user interface, browse sample bakery products, view product details, and try the available browsing features.
 
-You retain ownership by creating and controlling the GitHub repository and Vercel project yourself. Do not share account passwords or tokens with anyone.
+**Please note:** The live deployment is a frontend-only demonstration. It does not represent the complete functionality of the original project.
 
-1. Extract this ZIP on your computer.
-2. Create a new repository in **your own GitHub account** (public or private as you prefer). Name it something like `bakeverse-demo`.
-3. Upload the contents of this `BakeVerse-demo` folder to the repository root. The `package.json`, `package-lock.json`, `index.html`, `src/` and `vercel.json` files should be at the repository root, not nested inside another folder.
-4. Sign in to Vercel using your own account and choose **Add New → Project**.
-5. Import your `bakeverse-demo` GitHub repository.
-6. Use these project settings:
-   - Framework preset: **Vite** (or let Vercel detect it)
-   - Root directory: `./`
-   - Build command: `npm run build`
-   - Output directory: `dist`
-   - Install command: `npm install` (default is fine)
-   - Environment variables: **none required** for this demo
-7. Deploy. Vercel will build and host the site under the project associated with your account. You can later attach a domain you own from the Vercel project settings.
+The demo is intended to showcase the interface and selected user-facing features without requiring a database, backend server, or API credentials.
 
-## Run locally (optional)
+---
 
-Install Node.js LTS, open a terminal in this folder, and run:
+## ✨ About the Full Project
+
+The original BakeVerse project is designed as a more comprehensive bakery platform, combining customer-facing features with bakery management functionality.
+
+### 🛍️ Customer Experience
+- Browse bakery products and explore product details.
+- Discover cakes and other bakery items through a dedicated catalogue.
+- Explore personalized cake discovery and customization concepts.
+- Access customer-oriented features supported by the full application.
+
+### 🤖 AI-Powered Features
+- AI-assisted cake recommendations and flavor discovery.
+- Conversational assistance through an AI chatbot.
+- Interactive cake customization and visualization concepts.
+
+### 🏪 Bakery Management
+- Dedicated bakery-owner or administrator functionality.
+- Product and inventory management.
+- Order management and related operational workflows.
+- Customer engagement features, such as reviews and notifications.
+
+*Feature availability and implementation may vary by module. The deployed demo does not enable the full application's backend-dependent functionality.*
+
+---
+
+## 🧰 Technology Stack
+
+The original project uses a full-stack web development architecture.
+
+| Technology | Purpose |
+|---|---|
+| React | Component-based user interface |
+| Vite | Frontend development and build tooling |
+| Node.js | Server-side JavaScript runtime |
+| Express.js | Backend APIs and application logic |
+| MongoDB | Database integration |
+| Google AI integrations | AI-assisted application features |
+| Three.js | Interactive 3D visualization concepts |
+| Framer Motion | UI animations and transitions |
+| Vercel | Hosting the public frontend demo |
+
+---
+
+## 🚀 Public Demo vs. Full Project
+
+| Feature | Public Demo | Full Project |
+|---|---|---|
+| Website interface | Available | Available |
+| Sample product catalogue | Available | Available |
+| Product browsing and details | Available | Available |
+| Search, filters, and sorting | Available | Depends on module |
+| Theme switching | Available | Available |
+| Authentication and user accounts | Disabled | Included in the full application |
+| Backend APIs and database | Not connected | Included |
+| AI-powered functionality | Not enabled | Included in the full application |
+| Customer and bakery management | Not enabled | Included in the full application |
+
+The public repository and deployment are intended to provide an accessible preview of the project. The original source package contains the broader application implementation.
+
+---
+
+## 💻 Getting Started with the Demo
+
+To run the frontend demo locally:
+
+**Prerequisites**
+- Node.js and npm installed.
+
+**Installation**
 
 ```bash
+git clone https://github.com/mondalsnehankur/Bakeverse.git
+cd Bakeverse
 npm install
 npm run dev
 ```
 
-Then open the local URL Vite prints in the terminal.
+Open the local URL displayed in your terminal to view the application.
 
-## Important notes
+To generate a production build:
 
-- The original `Bakery.zip` archive is separate and has not been modified by preparing this demo package.
-- This ZIP contains only the frontend source and public demo data; it does not include the backend, database dump, local environment files, API keys, `node_modules` or a stale prebuilt `dist/` folder.
-- Product images are loaded from Unsplash URLs, so the browser needs an internet connection to display them.
-- Product names, prices, ratings and bakery listings are demonstration data, not live offers or verified stock.
-- A local production build could not be verified in the preparation environment because dependency installation timed out and Vite was unavailable. Vercel will install dependencies during deployment; if its build log reports an error, use that exact error to troubleshoot before sharing the site publicly.
+```bash
+npm run build
+```
+
+The build output is generated in the `dist` directory.
+
+*These instructions apply to the public demo repository. Running the complete application may require additional backend setup, database configuration, API credentials, and environment variables.*
+
+---
+
+## 📦 Request the Complete Project
+
+Interested in exploring the complete BakeVerse application, including its backend, database integration, and additional application modules?
+
+The **original project ZIP is available upon request**.
+
+If you are a recruiter, fellow developer, student, or technology enthusiast interested in reviewing the complete implementation, feel free to contact me.
+
+**Contact:**  
+- **GitHub:** [@mondalsnehankur](https://github.com/mondalsnehankur)
+- **Email:** *[Add your preferred professional email address here]*
+- **LinkedIn:** *[Add your LinkedIn profile URL here]*
+
+When reaching out, please mention **“BakeVerse — Full Project Request”** so I can identify your enquiry easily.
+
+Please note that the original package may contain configuration requirements that are not part of the public demo. Do not expect production credentials, private API keys, or live database access to be included in a shared package.
+
+---
+
+## 👨‍💻 About the Developer
+
+I'm a postgraduate computer applications student with a background in Physics and an interest in software development, artificial intelligence, and practical applications of machine learning.
+
+BakeVerse is one of my projects exploring modern frontend development, full-stack application architecture, and AI-assisted user experiences.
+
+I'm always open to constructive feedback, technical discussions, and opportunities to collaborate.
+
+---
+
+## 📄 License and Usage
+
+This repository is published to demonstrate the project and its frontend implementation. Please contact the author before redistributing the source code or using substantial portions of the project in another application.
+
+---
+
+**Built with curiosity, code, and a little love for cake. 🍰**
