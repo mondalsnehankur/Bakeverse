@@ -1,4 +1,4 @@
-```jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Sparkles, Clock, ShieldCheck, Mail } from 'lucide-react';
@@ -186,4 +186,3 @@ const Footer = () => {
 };
 
 export default Footer;
-```
