@@ -120,8 +120,8 @@ If you are a recruiter, fellow developer, student, or technology enthusiast inte
 
 **Contact:**  
 - **GitHub:** [@mondalsnehankur](https://github.com/mondalsnehankur)
-- **Email:** *[Add your preferred professional email address here]*
-- **LinkedIn:** *[Add your LinkedIn profile URL here]*
+- **Email:** *snehankur.mondal02@gmail.com*
+- **LinkedIn:** *https://www.linkedin.com/in/snehankur-mondal/*
 
 When reaching out, please mention **“BakeVerse — Full Project Request”** so I can identify your enquiry easily.
 
