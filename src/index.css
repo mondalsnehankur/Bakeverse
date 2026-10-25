@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-page: #FAF5FF;
+    --text-page: #1E1B4B;
+  }
+
+  html.dark,
+  :root.dark,
+  .dark {
+    --bg-page: #0F0817;
+    --text-page: #FAF5FF;
+  }
+
+  html {
+    background-color: var(--bg-page);
+    color: var(--text-page);
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-page);
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark body,
+  .dark body {
+    background-color: #0F0817 !important;
+    color: #FAF5FF !important;
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fredoka', 'Quicksand', cursive;
+  }
+}
+
+/* Custom whimsical pastel scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF5FF;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0F0817;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8B4FE;
+  border-radius: 9999px;
+  border: 2px solid #FAF5FF;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #7E22CE;
+  border: 2px solid #0F0817;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C084FC;
+}
+
+/* Soft floating cloud animations */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(10px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.06) translateY(-2px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 4s ease-in-out infinite;
+}
+
+.animate-gentle-pulse {
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+.animate-pop-in {
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Glassmorphism boutique style */
+.glass-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(216, 180, 254, 0.75);
+}
+
+.dark .glass-card {
+  background: rgba(26, 14, 38, 0.95);
+  border: 1.5px solid rgba(126, 34, 206, 0.35);
+  color: #FAF5FF;
+}
+
+.glass-card-cream {
+  background: rgba(255, 253, 249, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(254, 215, 170, 0.6);
+}
+
+.dark .glass-card-cream {
+  background: rgba(35, 18, 54, 0.95);
+  border: 1.5px solid rgba(192, 132, 252, 0.25);
+  color: #FAF5FF;
+}
+
+/* Utility to hide native scrollbar while retaining scrolling behavior */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
